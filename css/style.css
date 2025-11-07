@@ -1,0 +1,51 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.conteiner_chat{
+    max-width: 725px;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.person{
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.person:nth-child(even){
+    flex-direction: row-reverse;
+}
+.person:nth-child(odd) .name{
+    text-align: right;
+}
+
+.person:nth-child(even) .name{
+    text-align: left;
+}
+
+.box_chat{
+    min-height: 70px;
+    width: 400px;
+    box-sizing: border-box;
+    padding: 10px;
+    word-break:break-all;
+    display: flex;
+    align-items: center;
+}
+
+.person:nth-child(odd) .box_chat{
+    background-color: hotpink;
+    border-radius: 20px 20px 20px 0;
+}
+
+.person:nth-child(even) .box_chat{
+    background-color:aqua;
+    border-radius: 20px 20px 0 20px;
+}
+
+.time{
+    font-size: 12px;
+    opacity: 30%;
+}
+
